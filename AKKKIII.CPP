@@ -9,7 +9,7 @@ void move()
 
    while(1)
    { c=getch();
-	    if(kbhit)
+	    if(kbhit())  
 	    {
 	   if(c==81||c==81)
 	    }

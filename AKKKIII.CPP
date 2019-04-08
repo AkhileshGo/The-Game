@@ -52,11 +52,10 @@ int RXi,RYi; //for rectangle (obstacle) initial position;
 int c;
 int b,d;       //ball movement
 clrscr();
-initgraph(&gd,&gm,"C:\\TURBOC3\\BGI");
 cout<<"MOVE THE BALL THROUGH THE GAPS BETWEEN THE BARS \n";
 cout<<"USE STANDARD ARROW KEYS TO MAKE THE BALL MOVE...........\n";
-cout<<"PRESS Y or y TO START THE GANME";
-//DO SOMETHING FOR CLEARING THE SCREEN ON CLICKING ENTER FOR START...
+cout<<"PRESS Y or y TO START THE GAME";
+initgraph(&gd,&gm,"C:\\TURBOC3\\BGI");
 c=getch();
 		 //game starts
 while(1)

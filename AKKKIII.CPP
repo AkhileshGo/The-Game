@@ -55,6 +55,7 @@ clrscr();
 cout<<"MOVE THE BALL THROUGH THE GAPS BETWEEN THE BARS \n";
 cout<<"USE STANDARD ARROW KEYS TO MAKE THE BALL MOVE...........\n";
 cout<<"PRESS Y or y TO START THE GAME";
+clrscr();
 initgraph(&gd,&gm,"C:\\TURBOC3\\BGI");
 c=getch();
 		 //game starts

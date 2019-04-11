@@ -5,13 +5,14 @@
 int gd=DETECT;
 int gm;
 void move()
-{  int c;
+{     //c should be of char type. The character can be then typecasted and checked.
+	char c;
 
    while(1)
    { c=getch();
 	    if(kbhit)
 	    {
-	   if(c==81||c==81)
+	   if(c==81) //redundant check for same character
 	    }
 
 
@@ -51,11 +52,11 @@ int RXi,RYi; //for rectangle (obstacle) initial position;
 int c;
 int b,d;       //ball movement
 clrscr();
-initgraph(&gd,&gm,"C:\\TURBOC3\\BGI");
 cout<<"MOVE THE BALL THROUGH THE GAPS BETWEEN THE BARS \n";
 cout<<"USE STANDARD ARROW KEYS TO MAKE THE BALL MOVE...........\n";
-cout<<"PRESS Y or y TO START THE GANME";
-//DO SOMETHING FOR CLEARING THE SCREEN ON CLICKING ENTER FOR START...
+cout<<"PRESS Y or y TO START THE GAME";
+clrscr();
+initgraph(&gd,&gm,"C:\\TURBOC3\\BGI");
 c=getch();
 		 //game starts
 while(1)
@@ -68,14 +69,17 @@ while(1)
 		{
 		 d=getch();
 		 if(d==72)//upwards
+		 { //Multithreading function to move the ball simultaneously
+		 }
 
 		 if(d==80)//downwards
 		 {
+			 //Multithreading function to move the ball simultaneously
 		}
 	   }
 	else
 	{
-	cout<<"wrong choice asshole";
+	//Don't interrupt the main screen.
 	}
 }
 getch();

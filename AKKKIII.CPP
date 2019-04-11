@@ -91,12 +91,9 @@ while(1)
 		setcolor(BLACK);
 		setfillstyle(SOLID_FILL,BLACK);
 		circle(82,2,25);
+		} //Don't interrupt the user
+
 		}
-
-	{
-	//Don't interrupt the main screen.
-
-	}
 }
 getch();
 }

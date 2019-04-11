@@ -78,8 +78,24 @@ while(1)
 		}
 	   }
 	else
+	{//Redblip blinking  on wrong input INSTEAD OF CUSSING YOUR PLAYER YOU CAN SHOW AN INDICATOR WHICH TELLS HIM IT IS A WRONG INPUT
+		while(!kbhit)
+		{
+		setcolor(RED);
+		setfillstyle(SOLID_FILL,RED);
+	        circle(82,2,25);
+		int wait = 11000;
+		while(wait>0)
+		{ wait--;
+		}
+		setcolor(BLACK);
+		setfillstyle(SOLID_FILL,BLACK);
+		circle(82,2,25);
+		}
+
 	{
 	//Don't interrupt the main screen.
+
 	}
 }
 getch();
